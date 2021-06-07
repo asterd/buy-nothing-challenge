@@ -1,11 +1,8 @@
 <template>
   <main>
     <div class="flex">
-      <div class="w-1/2 h-screen flex items-center justify-center">
-        <img src="~assets/images/nothing.png" :alt="product.name" />
-      </div>
       <div
-        class="w-1/2 h-screen text-white flex items-center justify-center p-8 relative"
+        class="h-screen w-screen text-white flex items-center justify-center p-8"
         :style="{ backgroundColor: `#${product.color.hex}` }"
       >
         <nuxt-link
@@ -29,6 +26,7 @@
           <p>Home</p>
         </nuxt-link>
         <div class="space-y-4">
+          <img class="inline object-cover w-64 h-64 mr-2 rounded-full" src="~assets/images/nothing.png" :alt="product.name" />
           <p class="text-2xl font-bold">{{ product.name }}</p>
           <p>$ {{ product.amount }}</p>
           <p class="text-gray-100 text-sm">{{ product.description }}</p>
