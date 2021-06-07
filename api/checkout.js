@@ -1,5 +1,5 @@
 const stripe = require("stripe")(process.env.STRIPE_TEST_SK);
-const hostUrl = "https://nuxt-stripe-amber.vercel.app";
+const hostUrl = "https://buy-nothing-challenge.vercel.app/";
 
 export default async (req, res) => {
   const session = await stripe.checkout.sessions.create({
