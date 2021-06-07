@@ -82,7 +82,7 @@ export default {
     },
   },
   mounted() {
-    this.stripe = Stripe("pk_test_ZaFKDdkCzVR4hCmDsUKWodm200fZIzrcmf");
+    this.stripe = Stripe("pk_test_51IzfkwCgu2Rq8jqK8gDfiNfcVGLlGirxNDfAHWBLW7xXpp272hhOFoYZNtKzgzG5OBDrw23bLs3m3tCdnbTwQIpC00Bxwyx1G4");
   },
 };
 </script>
