@@ -1,68 +1,30 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">buy-nothing-challenge</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
+  <main class="min-h-screen">
+    <section class="p-8 max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-6">
+        <nuxt-link
+          :to="product.slug"
+          class="overflow-hidden text-center"
+          v-for="(product, p) in products"
+          :key="p"
         >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+          <img :src="product.images[0]" alt="product.name" class="mb-4" />
+          <p class="font-semibold text-gray-700 mb-1">
+            {{ product.name }}
+          </p>
+          <p class="text-sm">$ {{ product.amount }}</p>
+        </nuxt-link>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </template>
 
 <script>
-export default {}
+export default {
+  transition: "fade",
+  async asyncData({ $content }) {
+    const products = await $content("products").fetch();
+    return { products };
+  },
+};
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

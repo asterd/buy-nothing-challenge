@@ -1,0 +1,13 @@
+{
+  "name": "Nothing standard",
+  "amount": 999.99,
+  "currency": "EUR",
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1161A_01_540x.jpg?v=1588355703"
+  ],
+  "color": {
+    "name": "Green",
+    "hex": "83d398"
+  },
+  "description": "This is the nothing standard!"
+}

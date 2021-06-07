@@ -1,0 +1,13 @@
+{
+  "name": "Nothing GOLD",
+  "amount": 2001,
+  "currency": "EUR",
+  "images": [
+    "https://cdn.shopify.com/s/files/1/0262/0807/5798/products/SGT-1161A_01_540x.jpg?v=1588355703"
+  ],
+  "color": {
+    "name": "Gold",
+    "hex": "dce83e"
+  },
+  "description": "This is the nothing GOLD!"
+}
