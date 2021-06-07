@@ -2,7 +2,7 @@
   <main>
     <div class="flex">
       <div class="w-1/2 h-screen flex items-center justify-center">
-        <img :src="product.images[0]" :alt="product.name" />
+        <img src="~assets/images/nothing.png" :alt="product.name" />
       </div>
       <div
         class="w-1/2 h-screen text-white flex items-center justify-center p-8 relative"
