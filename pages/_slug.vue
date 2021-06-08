@@ -25,11 +25,13 @@
           </svg>
           <p>Home</p>
         </nuxt-link>
-        <div class="space-y-4">
-          <img class="inline object-cover w-64 h-64 mr-2 rounded-full" src="~assets/images/nothing.png" :alt="product.name" />
+        <div class="space-y-4 w-2/3 md:w-2/6">
+          <div class="content-center">
+            <img class="object-cover w-64 h-64 m-auto rounded-full" src="~assets/images/nothing.png" :alt="product.name" />
+          </div>
           <p class="text-2xl font-bold">{{ product.name }}</p>
           <p>$ {{ product.amount }}</p>
-          <p class="text-gray-100 text-sm">{{ product.description }}</p>
+          <p class="text-gray-100 text-md pb-8">{{ product.description }}</p>
           <button
             @click="buy()"
             class="w-full py-3 bg-white text-gray-800 font-semibold flex items-center justify-center space-x-2"

@@ -19,11 +19,20 @@ export default {
   },
   plugins: ["~plugins/modal.js"],
   components: true,
-  buildModules: ["@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxtjs/tailwindcss", '@nuxtjs/google-fonts'],
   modules: ["@nuxtjs/axios", "@nuxt/content"],
   content: {},
   tailwindcss: {
     jit: true
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+      Ranchers: true,
+      'Baloo+Tammudu+2': true,
+      Lato: [100, 300],
+      'Suez+One': true,
+    }
   },
   axios: {
     baseURL: process.env.BASE_URL
