@@ -26,7 +26,7 @@
           <p style="color: #4e54c8">Home</p>
         </nuxt-link>
         <div class="space-y-4 w-5/6 md:w-1/2 text-white">
-          <b class="text-blue-800 pb-8">Current Chart:</b>
+          <b class="text-blue-800 pb-8 text-center">Current Chart:</b>
           <ul class="list bg-blue-800">
             <li class="item">
               <i class="left-icon far fa-circle"></i>
@@ -39,6 +39,10 @@
               <b class="right-icon">&euro; 999.99</b>
             </li>
           </ul>
+          <div class="pt-8 px-4 text-blue-800 text-sm">
+            Nb. The chart is not live-updated. To be sure the data is valid, the update of chart occurs about once a day.
+            This is the only way to be sure that the values are correct.
+          </div>
         </div>
       </div>
     </div>
@@ -79,7 +83,7 @@ export default {
 }
 
 .item:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 100;
   background: var(--item-hover-bg);
   color: var(--item-hover-color);
