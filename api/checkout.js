@@ -1,4 +1,4 @@
-const stripe = require("stripe")(process.env.STRIPE_TEST_SK);
+const stripe = require("stripe")(process.env.STRIPE_PROD_SK);
 const hostUrl = "https://buy-nothing-challenge.vercel.app/";
 
 export default async (req, res) => {

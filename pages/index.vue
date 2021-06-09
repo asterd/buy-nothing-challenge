@@ -5,14 +5,19 @@
     <p class="tf text-center tcol text-4xl font-bold">Challenge</p>
     <br/>
     <div class="context w-screen flex-1">
-      <p class="text-center text-white text-3xl font-bold pt-8">Do you think you're RICH?</p>
-      <p class="text-center text-white text-2xl font-bold pt-4">are you really sure you can say that?</p>
-      <p class="text-center text-white text-2xl font-bold pt-4">Anyone can buy something expensive, but... </p>
-      <p class="text-center text-white text-2xl font-bold">are you rich enough to spend money for <b class="underline">ASBOLUTELY</b> nothing?</p>
-      <p class="text-center text-white text-4xl font-bold pt-8">PROVE IT!</p>
+      <p class="text-center text-white text-2xl md:text-3xl font-bold pt-8">Do you think you're RICH?</p>
+      <p class="text-center text-white text-1xl md:text-2xl font-bold pt-2">are you really sure you can say that?</p>
+      <p class="text-center text-white text-1xl md:text-2xl font-bold pt-1">Anyone can buy something expensive, but... </p>
+      <p class="text-center text-white text-1xl md:text-2xl font-bold">are you rich enough to spend money for <b class="underline">ASBOLUTELY</b> nothing?</p>
+      <p class="text-center text-white text-3xl md:text-4xl font-bold pt-4">PROVE IT!</p>
+      <p class="text-center text-white text-3xl md:text-4xl font-bold pt-2">
+        <nuxt-link to="/chart">
+          <span class="underline">Enter the #BuyNothing Chart!</span>
+        </nuxt-link>
+      </p>
       <br/>
 
-      <section class="pt-2 pb-10 max-w-3xl mx-auto">
+      <section class="pt-2 pb-10 px-2 max-w-3xl mx-auto">
         <div class="grid grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-2">
           <nuxt-link
             :to="product.slug"
@@ -35,12 +40,13 @@
         </div>
       </section>
 
-      <p class="text-center text-white text-2xl font-bold pt-8 pb-8">
+      <p class="text-center text-white text-1xl md:text-2xl font-bold pt-6 pb-8 px-4">
         select one of the available 'nothing' items and enter in the #BuyNothing chart!<br/>
         at 31-12-2021, the first 10, will receive a GIFT: the really exclusive #BuyNothing shirt!
       </p>
-      <br/><br/>
-      <p class="text-center text-white text-1xl font-bold pt-8">
+
+      <br/>
+      <p class="text-center text-black text-sm font-bold pt-8 px-10">
         Legal notes:
         This is not an e-commerce. Each time you pay for one of the 'nothing' items, you are DONATING money to me.
         This is a simple donation and you can't require money back. The challenge is your ability to donate money to
@@ -48,7 +54,6 @@
         So, paying this items you agree that is a donation and you CAN'T pretend anything from anyone related to this
         web application.
       </p>
-      <br/>
       <br/>
     </div>
 
@@ -99,7 +104,7 @@ export default {
   background: #4e54c8;
   /* background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8); */
   width: 100%;
-  height: 1200px;
+  height: 100vh;
 }
 
 .circles{
@@ -107,7 +112,7 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 130vh;
   overflow: hidden;
 }
 

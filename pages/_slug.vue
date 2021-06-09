@@ -25,7 +25,7 @@
           </svg>
           <p>Home</p>
         </nuxt-link>
-        <div class="space-y-4 w-2/3 md:w-2/6">
+        <div class="space-y-4 w-4/5 md:w-2/6">
           <div class="content-center">
             <img class="object-cover w-64 h-64 m-auto rounded-full" src="~assets/images/nothing.png" :alt="product.name" />
           </div>
@@ -82,7 +82,8 @@ export default {
     },
   },
   mounted() {
-    this.stripe = Stripe("pk_test_51IzfkwCgu2Rq8jqK8gDfiNfcVGLlGirxNDfAHWBLW7xXpp272hhOFoYZNtKzgzG5OBDrw23bLs3m3tCdnbTwQIpC00Bxwyx1G4");
+    // this.stripe = Stripe("pk_test_51IzfkwCgu2Rq8jqK8gDfiNfcVGLlGirxNDfAHWBLW7xXpp272hhOFoYZNtKzgzG5OBDrw23bLs3m3tCdnbTwQIpC00Bxwyx1G4");
+    this.stripe = Stripe("pk_live_51IzfkwCgu2Rq8jqKKL9FeUR3uZFc0tyJwALIsyHBNGPQNfgMek0vva5QQGkKpoDtSTeyKWoE6lQ0E3mlXwokLWwd008i9ZoNbO");
   },
 };
 </script>
